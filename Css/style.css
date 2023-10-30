@@ -1,0 +1,30 @@
+body
+{
+    background-color: #d1ebf7
+}
+
+header
+{
+    background-color: #002546;
+}
+nav{
+    background-color: #87cefa;
+
+}
+.container-flex {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente los elementos en el contenedor */
+    align-items: center; /* Centra verticalmente los elementos en el contenedor */
+}
+   
+.item {
+    margin: 100Px; /* Agrega espacio entre los elementos */
+    padding: 50px;
+    text-align: center;
+    border: 1px solid transparent; /* borde transparente */
+    height:200px; /* ancho DE LAS CAJAS */
+    width: 200px; /* ALTO DE LAS CAJAS */
+    background-color: #36d6e7;
+    list-style: none; /* Quita las viñetas */
+
+  }
