@@ -1,0 +1,29 @@
+
+a.button{
+    background-color:aquamarine;
+    padding: 30px;
+    margin-left: 40%;
+    border-radius: 3px;
+    display: block;
+    width: 300px;
+    text-align: center;
+    text-decoration: none;
+    color:black;
+    font-family: $font-fuente;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    &:hover {
+        opacity:50%;
+    }
+    }
+    @media (max-width: 768px) {
+       
+        a.button {
+            background-color: aqua; 
+            padding: 30px;
+            margin-left: 0; /* Restablecer el margen izquierdo a 0 */
+            width: 100%; /* Expandir al ancho completo en dispositivos móviles */
+            font-weight: 400; /* Restablecer el peso de fuente a normal en dispositivos móviles */
+        }
+  }

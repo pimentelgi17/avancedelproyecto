@@ -1,0 +1,145 @@
+section {
+
+  .container-flex {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente los elementos en el contenedor */
+    align-items: center; /* Centra verticalmente los elementos en el contenedor */
+  }
+  
+  .item {
+    margin: 100px; /* Agrega espacio entre los elementos */
+    padding: 50px;
+    text-align: center;
+    border: 1px solid transparent; /* borde transparente */
+    height: 200px; /* ancho DE LAS CAJAS */
+    width: 200px; /* ALTO DE LAS CAJAS */
+    background-color: #36d6e7;
+    list-style: none; /* Quita las viñetas */
+    position: relative; /* Añade esta propiedad para permitir el pseudo-elemento */
+  color: black; /* Color del texto por defecto */
+  &::before {
+   
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0); /* Color de fondo transparente por defecto */
+  }
+
+  &:hover {
+    &::before {
+      background: rgba(0, 0, 0, 0.5); /* Cambia el color de fondo del pseudo-elemento al hacer hover */
+    }
+
+    color: white; /* Cambia el color del texto a blanco al hacer hover en una caja */
+  }
+}
+@media (max-width: 767px) {
+    .container-flex {
+        flex-direction: row; /* Para que las cajas estén en la misma fila en dispositivos móviles */
+      }    
+  
+      .item {
+        width: 120px; /* Aumenta el ancho en dispositivos móviles */
+        height: 120px; /* Aumenta la altura en dispositivos móviles */
+        margin: 10px; /* Ajusta el margen para dar más espacio en dispositivos móviles */
+        padding: 10px; /* Ajusta el relleno para dar más espacio en dispositivos móviles */
+        font-size: 14px; /* Aumenta el tamaño del texto en dispositivos móviles */
+        letter-spacing: 1px; /* Ajusta el espaciado entre letras en dispositivos móviles */
+      }
+  }
+}
+div {
+  .contenedor {
+    display: flex;
+    flex-direction: row;
+    margin-left: 50%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+  }
+  
+  /* Estilos para la imagen */
+  .imagen-contacto {
+    display: block;
+   margin-bottom: 20px;
+   margin-left: 25%; /* Espacio entre la imagen y el botón */
+  }
+ 
+
+ section {
+  #Contacto {
+    font-family: $font-fuente; /* Hereda la fuente del elemento padre (en este caso, del cuerpo) */
+    display: flex;
+    align-items: center;
+
+  }
+
+  contacto-content {
+    flex: 1; /*  el contenido ocupe todo el espacio disponible en la línea */
+  }
+  
+  iframe {
+    width: 600px; /* Ajusta el ancho de la imagen  */
+    height: 450px; /* Ajusta la altura de la imagen */
+    border: 0;
+  }
+  .contacto-flex {
+    display: flex;
+    align-items: center;
+  }
+ }
+ }
+
+  
+  @media (max-width: 767px) {
+    .contacto-flex {
+      display: block; /* Cambia a bloque para dispositivos móviles */
+    }
+  
+    .imagen-contacto {
+        max-width: 100%; /* Haz que la imagen ocupe todo el ancho disponible */
+        height: auto; /* Ajusta la altura automáticamente */
+        max-height: 200px; /* Ajusta el tamaño máximo de la altura */
+        margin-top: 20px; /* Agrega margen superior para separar la imagen de la información */
+        display: block
+      }
+
+    .contacto-content {
+        text-align: center; /* Centra el contenido en dispositivos móviles */
+        ;
+      }
+  }
+  .contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .clases-particulares {
+    flex: 1;
+    padding: 20px; /* Añade relleno para separar las secciones */
+  }
+  
+  .contacto-flex {
+    flex: 1;
+    padding: 20px; /* Añade relleno para separar las secciones  */
+  }
+  h2 {
+    font-family:$font-fuente;
+    color: $color-fuente;
+  }
+  p
+  {font-family:$font-fuente;
+    color: $color-fuente;
+  }
+  .container-examen{
+    display: flex;
+  }
+  
+  .column {
+    flex: 1;
+    padding: 20px;
+  }
